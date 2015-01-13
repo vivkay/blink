@@ -19,13 +19,93 @@ html {
 }
 
 .circle {
+    position: relative;
     background-color: orange;
     border-radius: 50%;
-    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
 }
 
-.center {
-    position: 0 auto;
+.type {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: blue;
     text-align: center;
-    padding: 5em;
+    text-decoration: none;
+    position: 0 auto;
+    display: block;
+    margin: 3em;
+}
+
+.btn {
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 3em;
+    line-height: 3em;
+    display: inline-block;
+    text-align: center;
+    transition: all 250ms linear;
+    font-family: sans-serif;
+}
+
+.eye1 {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: calc(50% + 10px);
+    bottom: calc(50% - 12.5px);
+}
+
+.eye2 {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 60px);
+    bottom: calc(50% - 12.5px);
+}
+
+.iris1 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    left: calc(50% + 24px);
+    bottom: calc(50% - 12.5px);
+}
+
+.iris2 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    left: calc(50% - 45px);
+    bottom: calc(50% - 12.5px);
+}
+
+.iris1:hover {
+    left: calc(50% + 30px);
+    bottom: calc(50% - 3px);
+    transition: all .5s linear;
+}
+
+.iris2:hover {
+    left: calc(50% - 30px);
+    bottom: calc(50% - 8px);
+    transition: all .5s linear;
+}
+
+
+
+.circle:hover{
+    background-color: pink;
+    transition: all .5s linear;
 }
